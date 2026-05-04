@@ -1,0 +1,26 @@
+{
+  "name": "webtals",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "isotope-layout": "^3.0.6",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swiper": "^8.3.2",
+    "typed.js": "^2.0.12",
+    "formik": "^2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5"
+  }
+}
