@@ -14,9 +14,9 @@ const PreLoader = () => {
         <div className="vertical-center">
           <div className="spinner">
             <div className="double-bounce1" />
-            <div className="double-bounce2" />
+            <div className="double-bounce2" />           
           </div>
-        </div>
+        </div>        
       </div>
     </div>
   );

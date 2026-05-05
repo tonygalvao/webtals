@@ -3,11 +3,11 @@ import TypingAnimation from "../components/TypingAnimation";
 import Context from "../context/context";
 
 const headerMenus = [
-  { title: "Início", link: "about", icon: "icon fa fa-user-o" },
-  // { title: "Currículo", link: "resume", icon: "icon fa fa-list-alt" },
+  { title: "Bio", link: "about", icon: "icon fa fa-user-o" },  
   { title: "Projetos", link: "works", icon: "icon fa fa-object-ungroup" },
+  { title: "Currículo", link: "resume", icon: "icon fa fa-list-alt" },
   // { title: "Blog", link: "blog", icon: "icon fa fa-commenting-o" },
-  // { title: "Contatos", link: "contacts", icon: "icon fa fa-envelope-o" },
+  { title: "Contatos", link: "contacts", icon: "icon fa fa-envelope-o" },
 ];
 
 const Header = ({ noSideBarBtn, menus, animationText }) => {

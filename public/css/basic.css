@@ -1,11 +1,3 @@
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.6
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © RyanCV by bslthemes. All Rights Reserved.
-**/
-
 /* TABLE OF CONTENTS
 	1. Base
 	2. Container
@@ -380,7 +372,9 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #78cc6d;
+	/* background: #78cc6d; */
+	background-image: url("/../images/reading-eyeglasses_27106.png");
+	background-size: cover;
 	opacity: 1;
 	-webkit-animation: sk-bounce 2s infinite ease-in-out;
 	animation: sk-bounce 2s infinite ease-in-out;

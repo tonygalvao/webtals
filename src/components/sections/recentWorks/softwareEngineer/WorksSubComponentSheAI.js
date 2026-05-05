@@ -11,7 +11,7 @@ const T = ({ children }) => (
       fontSize: "0.82em",
       fontWeight: "600",
       letterSpacing: "0.04em",
-      color: "var(--theme-color, #f5a623)",
+      color: "var(--theme-color, #f9f871)",
       verticalAlign: "middle",
       lineHeight: "1.7",
       whiteSpace: "nowrap",

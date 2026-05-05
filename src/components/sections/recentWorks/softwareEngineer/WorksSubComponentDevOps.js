@@ -11,7 +11,7 @@ const T = ({ children }) => (
       fontSize: "0.82em",
       fontWeight: "600",
       letterSpacing: "0.04em",
-      color: "var(--theme-color, #f5a623)",
+      color: "var(--theme-color, #f9f871)",
       verticalAlign: "middle",
       lineHeight: "1.7",
       whiteSpace: "nowrap",
@@ -84,37 +84,24 @@ const sections = [
   {
     heading: "Stack de Deploy",
     content: (
-      <div style={{ overflowX: "auto" }}>
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            fontSize: "0.88em",
-            lineHeight: "2",
-          }}
-        >
-          <thead>
-            <tr style={{ opacity: 0.5, textTransform: "uppercase", fontSize: "0.78em", letterSpacing: "0.08em" }}>
-              <th style={{ textAlign: "left", paddingRight: "1.5rem", paddingBottom: "6px" }}>Camada</th>
-              <th style={{ textAlign: "left", paddingRight: "1.5rem", paddingBottom: "6px" }}>Tecnologia</th>
-              <th style={{ textAlign: "left", paddingBottom: "6px" }}>Ambiente</th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              ["Orquestração", <T>Azure DevOps</T>, "Control Plane"],
-              ["Desenvolvimento", <><T>Ubuntu</T> (WS01)</>, "On-premise"],
-              ["Produção", <><T>GCP</T> · <T>Compute Engine</T> · <T>Cloud SQL</T></>, "Cloud"],
-              ["App Stack", <><T>Laravel</T> · <T>ReactJS</T> · <T>Python</T></>, "Full-stack"],
-            ].map(([camada, tech, ambiente]) => (
-              <tr key={camada} style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-                <td style={{ paddingRight: "1.5rem", paddingTop: "4px", paddingBottom: "4px", opacity: 0.7 }}>{camada}</td>
-                <td style={{ paddingRight: "1.5rem", paddingTop: "4px", paddingBottom: "4px" }}>{tech}</td>
-                <td style={{ paddingTop: "4px", paddingBottom: "4px", opacity: 0.6 }}>{ambiente}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div
+        style={{ display: "flex", flexWrap: "wrap", gap: "10px 18px", lineHeight: "2" }}
+      >
+        {[
+          "Azure Devops",
+          "Python",
+          "YAML",
+          "Linux Ubuntu",
+          "Google Cloud Platform",
+          "Laravel",
+          "ReactJS",
+          "CI/CD",
+          "Shell Script",          
+          "Docker",
+          "Nginx",
+        ].map((tech) => (
+          <T key={tech}>{tech}</T>
+        ))}
       </div>
     ),
   },

@@ -13,7 +13,7 @@ import ContactInfo from "../src/components/sections/ContactInfo";
 import FunFact from "../src/components/sections/FunFact";
 import Pricing from "../src/components/sections/Pricing";
 import Quote from "../src/components/sections/Quote";
-import ResumeSection from "../src/components/sections/Resume";
+import { ResumeSectionTony } from "../src/components/sections/Resume";
 import Services from "../src/components/sections/Services";
 import Skills from "../src/components/sections/Skills";
 import Testimonials from "../src/components/sections/Testimonials";
@@ -29,12 +29,10 @@ const RecentWorks = dynamic(
   }
 );
 const bio = `<p>
-Olá, me chamo Tony! Tenho uma combinação sólida de visão sistêmica, 
-pensamento estratégico e habilidades técnicas que me permitem liderar 
-equipes em desenvolvimento de software. Com foco em organização, clareza de 
-requisitos e escalabilidade, priorizando a entrega de 
-soluções eficientes e sustentáveis. Minha experiência transita entre 
-planejamento, execução e integração de tecnologias.
+Olá, sinta-se a vontade para explorar o meu portfólio e 
+conhecer um pouco mais sobre minha jornada profissional 
+e o trabalho que desenvolvi ao longo dos anos. Em caso de 
+dúvidas ou interesse para algum projeto, acesse a página de contato. 
 </p><br/>`;
 
 const missao = `<p>
@@ -43,14 +41,14 @@ e requisitos em projetos bem estruturados. Busco aplicar tecnologias emergentes 
 melhorias contínuas nos processos, sempre com o compromisso de colaborar de forma significativa 
 e integrada, fazendo parte do todo e contribuindo para resultados reais e duradouros.
 </p>`;
+
 const IndexDark = () => {
   return (
-    <Layout bg={"gradient"}>
+    <Layout bg={"gradient"} bgImgUrl={"/images/reading-eyeglasses_27106.png"}>
       <Head>
         <link rel="stylesheet" href="css/new-skin/new-skin.css" />
-        <link rel="stylesheet" href="css/demos/demo-2-colors.css" />
         <link rel="stylesheet" href="css/new-skin/classic-skin.css" />
-        <link rel="stylesheet" href="css/template-dark/dark.css" />
+        <link rel="stylesheet" href="css/webtals-colors.css" />
       </Head>
       <Header />
       <Home>
@@ -74,36 +72,22 @@ const IndexDark = () => {
             <a target="_blank" rel="noreferrer" href="https://github.com/tonygalvao">
               <span className="fa fa-github" />
             </a>
-            {/* <a target="_blank" rel="noreferrer" href="https://www.spotify.com/">
-              <span className="fa fa-spotify" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stackoverflow.com/"
-            >
-              <span className="fa fa-stack-overflow" />
-            </a> */}
           </div>
           {/* profile buttons */}
-          <div className="lnks">
+          {/* <div className="lnks">
             <a href="#" className="lnk">
               <span className="text">Download CV</span>
             </a>
-            <a href="#" className="lnk discover">
+            <a href={"#contacts"} className="lnk discover">
               <span className="text">Entre em Contato</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </Home>
       <ContentContainer>
         <About>
           <AboutMe bio={bio} />
           <Services />
-          {/* <Pricing /> */}
-          
-          {/* <Clients />
-          <Quote /> */}
           <div className="content about">
               {/* title */}
               <div className="title">Objetivo
@@ -121,21 +105,15 @@ const IndexDark = () => {
             </div>
             <FunFact />
         </About>
-        {/* <Resume>
-          <ResumeSection />
-          <Skills />
-          <Testimonials />
-        </Resume> */}
+        <Resume>
+          <ResumeSectionTony />
+        </Resume>
+        <Contact>          
+          <ContactForm />
+        </Contact>
         <Work>
           <RecentWorks user="software_engineer"/>
         </Work>
-        {/* <Blog>
-          <BlogSection />
-        </Blog> */}
-        {/* <Contact>
-          <ContactInfo />
-          <ContactForm />
-        </Contact> */}
       </ContentContainer>
     </Layout>
   );

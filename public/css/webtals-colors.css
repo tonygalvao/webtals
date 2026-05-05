@@ -1,0 +1,695 @@
+/**
+ * Webtals Color Theme
+ * Version: 1.0
+ *
+ * Palette:
+ *   #3a3f37 — Background principal (verde escuro/oliva)
+ *   #ab9c7f — Overlay / Acento secundário (bege quente)
+ *   #e0d8bb — Texto (creme claro)
+ *   #5f7b5a — Links / Estados ativos (verde sálvia)
+ *   #0a4f3b — Acento primário (verde floresta)
+ */
+
+/* =====================
+   Fundo e Cor Base de Texto
+   ===================== */
+
+body {
+    background-color: #ab9c7f;
+    color: #e0d8bb;
+}
+
+.background.gradient {
+    background: #ab9c7f;
+    background: -webkit-linear-gradient(top left, #ab9c7f 0%, #ab9c7f 100%);
+    background: linear-gradient(to bottom right, #ab9c7f 0%, #ab9c7f 100%);
+}
+
+.background {
+    background-color: #3a3f37 !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2a2e28;
+}
+
+::-webkit-scrollbar {
+    background-color: #3a3f37;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(224, 216, 187, 0.25);
+}
+
+/* =====================
+   Tipografia Base
+   ===================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e0d8bb;
+}
+
+p {
+    color: #e0d8bb;
+}
+
+a {
+    color: #bbd867;
+}
+
+/* =====================
+   Acento Primário — #0a4f3b
+   Spinners, barras de progresso, ícone de serviços, setas hover
+   ===================== */
+
+/* .preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2, */
+.lnk:hover .arrow:before,
+.button:hover .arrow:before,
+.lnk:hover .arrow:after,
+.button:hover .arrow:after,
+.resume-items .resume-item.active .date:before,
+.skills-list ul li .progress .percentage,
+.single-post-text ul > li:before,
+.comment-text ul > li:before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a:before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a:after,
+.content-sidebar .main-menu ul li.page_item_has_children:hover > a:before,
+.content-sidebar .main-menu ul li.page_item_has_children:hover > a:after,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a:before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a:after,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a:before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a:after,
+.content-sidebar .close:hover:before, .content-sidebar .close:hover:after,
+.header .menu-btn:hover span, .header .menu-btn:hover span:before,
+.header .menu-btn:hover span:after,
+/* .info-list ul li strong, */
+.profile .main-menu ul li.page_item_has_children.current_page_item > a:before,
+.profile .main-menu ul li.page_item_has_children.current_page_item > a:after,
+.profile .main-menu ul li.page_item_has_children:hover > a:before,
+.profile .main-menu ul li.page_item_has_children:hover > a:after,
+.profile .main-menu ul li.page_item_has_children.current_page_parent > a:before,
+.profile .main-menu ul li.page_item_has_children.current_page_parent > a:after,
+.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a:before,
+.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a:after,
+.service-items .service-item .icon,
+.revs-carousel .owl-dot.active,
+.preloader .spinner.default-circle:before,
+.preloader .spinner.default-circle:after,
+.preloader .spinner.clock:before,
+.preloader .spinner.box-rotation:after,
+.blog-content ul > li:before {
+    background: #0a4f3b;
+}
+
+.preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2 {
+    border-color: #d1d1d1;
+}
+
+/* =====================
+   Links / Estados Ativos — #5f7b5a
+   ===================== */
+
+.lnk:hover,
+.button:hover,
+.lnk:hover .ion,
+.button:hover .ion,
+a:hover,
+input:focus,
+textarea:focus,
+.header .top-menu ul li:hover a,
+.header .top-menu ul li.active a,
+.header .top-menu ul li.current-menu-item a,
+.header .top-menu ul li:hover a .icon,
+.header .top-menu ul li.active a .icon,
+.header .top-menu ul li:hover a .link,
+.header .top-menu ul li.active a .link,
+.header .top-menu ul li.current-menu-item a .icon,
+.header .top-menu ul li.current-menu-item a .link,
+.header .profile .subtitle,
+/* .card-started .profile .subtitle, */
+.content-sidebar .profile .subtitle,
+.card-started .profile .social a:hover .ion,
+.card-started .profile .social a:hover .fab,
+.card-started .profile .social a:hover .fas,
+.content-sidebar .profile .social a:hover .ion,
+.content-sidebar .profile .social a:hover .fab,
+.content-sidebar .profile .social a:hover .fas,
+.pricing-items .pricing-item .icon,
+/* .fuct-items .fuct-item .icon, */
+.resume-title .icon,
+.skill-title .icon,
+.resume-items .resume-item.active .date,
+/* .content.works .filter-menu .f_btn.active, */
+.box-item:hover .desc .name,
+.post-text-bottom span.cat-links a,
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.page-numbers.current,
+.page-links a,
+.post-comments .post-comment .desc .name,
+.post-comments .post-comment .desc span.comment-reply a:hover,
+.content-sidebar .main-menu ul li.current_page_item > a,
+.content-sidebar .main-menu ul li:hover > a,
+.content-sidebar .main-menu ul li.current_page_parent > a,
+.content-sidebar .main-menu ul li.current_page_ancestor > a,
+.content-sidebar .widget ul li a:hover,
+.content-sidebar .tagcloud a,
+.content-sidebar .profile .typed-cursor,
+.card-started .profile .typed-cursor,
+.box-item .date,
+.profile .main-menu ul li.current-menu-item a,
+.profile .main-menu ul li.current_page_item > a,
+.profile .main-menu ul li:hover > a,
+.profile .main-menu ul li.current_page_parent > a,
+.profile .main-menu ul li.current_page_ancestor > a,
+.skills-list.list ul li .name:before,
+.preloader .spinner.recursive-circle,
+.single-post-text p a,
+.comment-text p a,
+.blog-content p a,
+.card-started .profile .social a:hover .ion,
+.card-started .profile .social a:hover .fab,
+.card-started .profile .social a:hover .fas,
+.card-started .profile .social a:hover .fa,
+.content-sidebar .profile .social a:hover .ion,
+.content-sidebar .profile .social a:hover .fab,
+.content-sidebar .profile .social a:hover .fas,
+.content-sidebar .profile .social a:hover .fa {
+    color: #e0d8bb;
+}
+
+.card-started .profile .subtitle,
+.content.works .filter-menu .f_btn.active {
+    color: #ab9c7f;
+}
+
+.fuct-items .fuct-item .icon {
+    color: #5f7b5a;
+}
+
+/* Primeira palavra / primeira letra dos títulos */
+.content .title .first-word,
+.content .title:first-letter,
+.content-sidebar h2.widget-title .first-word,
+.content-sidebar h2.widget-title:first-letter {
+    color: #e0d8bbc5 !important;
+}
+
+/* =====================
+   Ícones Sociais — estado padrão
+   ===================== */
+
+.card-started .profile .social a .ion,
+.card-started .profile .social a .fab,
+.card-started .profile .social a .fas,
+.card-started .profile .social a .fa,
+.content-sidebar .profile .social a .ion,
+.content-sidebar .profile .social a .fab,
+.content-sidebar .profile .social a .fas,
+.content-sidebar .profile .social a .fa {
+    color: rgba(224, 216, 187, 0.7);
+}
+
+/* =====================
+   Gradientes Decorativos (Overlay) — #ab9c7f
+   ===================== */
+
+.card-started .profile .image:before,
+.content-sidebar .profile .image:before,
+.content .title:before,
+.content-sidebar h2.widget-title:before {
+    background: -moz-linear-gradient(-45deg, rgba(95, 123, 90, 0.67) 0%, rgba(95, 123, 90, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(95, 123, 90, 0.67) 0%, rgba(95, 123, 90, 1) 100%);
+    background: linear-gradient(135deg, rgba(95, 123, 90, 0.67) 0%, rgba(95, 123, 90, 1) 100%);
+}
+
+.card-started:after {
+    background: -moz-linear-gradient(-45deg, rgba(95, 123, 90, 0.4) 0%, rgba(171, 156, 127, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(95, 123, 90, 0.4) 0%, rgba(171, 156, 127, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(95, 123, 90, 0.4) 0%, rgba(171, 156, 127, 0.01) 100%);
+}
+
+.box-item .image .info:before {
+    background: -moz-linear-gradient(-45deg, rgba(171, 156, 127, 0.5) 0%, rgba(171, 156, 127, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(171, 156, 127, 0.5) 0%, rgba(171, 156, 127, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(171, 156, 127, 0.5) 0%, rgba(171, 156, 127, 0.01) 100%);
+}
+
+.card-started .profile .slide,
+.content-sidebar .profile .slide {
+    background-color: rgba(171, 156, 127, 0.1);
+}
+
+.pricing-items .pricing-item .feature-list ul li strong {
+    background: rgba(171, 156, 127, 0.15);
+}
+
+.service-items .service-item .icon {
+    background: linear-gradient(135deg, rgb(171, 156, 127) 0%, rgba(171, 156, 127, 0.46) 100%) !important;
+    color: #0a4f3b !important;
+}
+
+.content .title:after {
+    background: radial-gradient(ellipse at left, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+/* Linhas decorativas (border-line) */
+.border-line-v:before {
+    background: radial-gradient(ellipse at top, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.border-line-h:after {
+    background: radial-gradient(ellipse at left, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.lnks:before {
+    background: radial-gradient(ellipse at left, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.lnk:before,
+.button:before {
+    background: radial-gradient(ellipse at top, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.service-items.border-line-v:after {
+    background: radial-gradient(ellipse at top, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.content.works .grid-items.border-line-v:after {
+    background: radial-gradient(ellipse at top, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.header .top-menu ul li a:before {
+    background: radial-gradient(ellipse at right, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.info-list ul li:before {
+    background: radial-gradient(ellipse at center, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.post-comments .post-comment:before {
+    background: radial-gradient(ellipse at left, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.content.blog .border-line-v:after {
+    background: radial-gradient(ellipse at top, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+/* =====================
+   Bordas (border-color) — acento primário
+   ===================== */
+
+input:focus,
+textarea:focus,
+.revs-carousel .owl-dots .owl-dot,
+.resume-items .resume-item.active .date,
+.box-item .date,
+.content.skills .skills-list.circles .progress .bar,
+.content.skills .skills-list.circles .progress .fill,
+.preloader .spinner.clock,
+.preloader .spinner.box-rotation,
+.skills-list.circles .progress .bar {
+    border-color: #0a4f3b;
+}
+
+.preloader .spinner.recursive-circle,
+.preloader .spinner.recursive-circle:after {
+    border-color: #0a4f3b;
+    border-top-color: transparent;
+}
+
+blockquote {
+    border-left-color: #0a4f3b;
+}
+
+.preloader .spinner.simple-circle {
+    border-right-color: #0a4f3b;
+}
+
+.preloader .spinner.quantum-spinner,
+.preloader .spinner.quantum-spinner:before,
+.preloader .spinner.quantum-spinner:after {
+    border-top-color: #0a4f3b;
+}
+
+/* =====================
+   Título das Seções
+   ===================== */
+
+.content .title {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Botões e Links
+   ===================== */
+
+.lnk,
+.button {
+    color: #e0d8bb;
+}
+
+.lnk .arrow:before,
+.button .arrow:before,
+.lnk .arrow:after,
+.button .arrow:after {
+    background: #e0d8bb;
+}
+
+/* =====================
+   Card Principal (Home / Perfil)
+   ===================== */
+
+.card-started .profile {
+    background: #464b43;
+}
+
+.card-started .profile .slide:before,
+.card-started .profile .slide:after {
+    background: #464b43;
+}
+
+.card-started .profile .image img {
+    border-color: #464b43;
+    background-color: #464b43;
+}
+
+.card-started .profile .title {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Cards de Conteúdo
+   ===================== */
+
+.card-inner {
+    background: #464b43;
+}
+
+.card-inner:before,
+.card-inner:after {
+    background: #464b43;
+}
+
+/* =====================
+   Header
+   ===================== */
+
+.header .top-menu ul li a,
+.header .menu-btn {
+    color: #e0d8bb;
+    background: #464b43;
+}
+
+.header .menu-btn span,
+.header .menu-btn span:before,
+.header .menu-btn span:after {
+    background: #e0d8bb;
+}
+
+@media (max-width: 1240px) {
+    .header {
+        background: #464b43;
+    }
+}
+
+/* =====================
+   Sidebar (Content Sidebar)
+   ===================== */
+
+.content-sidebar {
+    background: #464b43;
+}
+
+.content-sidebar .close {
+    background: #525750;
+}
+
+.content-sidebar .close:before,
+.content-sidebar .close:after {
+    background: #e0d8bb;
+}
+
+.content-sidebar .widget ul li a {
+    color: #e0d8bb;
+}
+
+.content-sidebar h2.widget-title {
+    color: #e0d8bb;
+}
+
+.content-sidebar h2.widget-title .first-word {
+    color: #e0d8bb;
+}
+
+.content-sidebar h2.widget-title:first-letter {
+    color: #e0d8bb;
+}
+
+.content-sidebar .main-menu ul li a {
+    color: #e0d8bb;
+}
+
+.content-sidebar .main-menu ul li:after,
+.content-sidebar .main-menu ul li:first-child::before {
+    background: radial-gradient(ellipse at left, rgba(171, 156, 127, 0.2) 0%, rgba(171, 156, 127, 0) 70%);
+}
+
+.content-sidebar .widget ul li {
+    border-color: #5f7b5a;
+}
+
+.content-sidebar .widget ul li:last-child {
+    border-color: #5f7b5a;
+}
+
+/* =====================
+   Menu de Perfil
+   ===================== */
+
+.profile .main-menu-fixed:before {
+    background: #464b43;
+}
+
+.profile .main-menu ul li a {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Info List (About / Contatos)
+   ===================== */
+
+.info-list ul li strong {
+    color: #e0d8bb;
+    font-weight: bolder;
+}
+
+.info-list ul li strong:after {
+    background: #464b43;
+}
+
+/* =====================
+   Serviços
+   ===================== */
+
+.service-items .service-item .name {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Pricing
+   ===================== */
+
+.pricing-items .pricing-item .name {
+    color: #e0d8bb;
+}
+
+.pricing-items .pricing-item .amount .number {
+    color: #e0d8bb;
+}
+
+.pricing-items .pricing-item .amount .dollar,
+.pricing-items .pricing-item .amount .period {
+    color: #e0d8bb;
+}
+
+.pricing-items .pricing-item .amount .period {
+    color: rgba(224, 216, 187, 0.55);
+}
+
+.pricing-items .pricing-item .feature-list ul li {
+    color: #e0d8bb;
+}
+
+.pricing-items .pricing-item .feature-list ul li strong {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Fun Fact
+   ===================== */
+
+.fuct-items .fuct-item .name {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Currículo (Resume)
+   ===================== */
+
+.resume-title .icon,
+.skill-title .icon {
+    background: transparent;
+}
+
+.resume-title .name,
+.skill-title .name {
+    color: #e0d8bb;
+}
+
+.resume-items .resume-item .name {
+    color: #e0d8bb;
+}
+
+.resume-items .resume-item .date {
+    color: #ab9c7f;
+    border-color: #ab9c7f;
+}
+
+/* =====================
+   Skills
+   ===================== */
+
+.skills-list ul li .name {
+    color: #e0d8bb;
+}
+
+.skills-list ul li .progress {
+    background: #525750;
+}
+
+.skills-list.dotted ul li .progress .dg span {
+    background: #525750;
+}
+
+.skills-list.circles .progress {
+    background: #525750;
+}
+
+.skills-list.circles .progress span {
+    color: #e0d8bb;
+}
+
+.skills-list.circles .progress:after {
+    background-color: #464b43;
+}
+
+/* =====================
+   Works / Blog (Box Items)
+   ===================== */
+
+.content.works .filter-menu .f_btn {
+    color: #e0d8bb;
+}
+
+.box-item .desc .name {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Popup
+   ===================== */
+
+.mfp-wrap.popup-box-inline .mfp-close {
+    color: #e0d8bb;
+}
+
+.mfp-wrap.popup-box-inline {
+    background: #464b43;
+}
+
+/* =====================
+   Inputs / Formulários
+   ===================== */
+
+input,
+textarea,
+button {
+    color: #e0d8bb;
+    border-color: #5f7b5a;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    color: #e0d8bb;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: rgba(224, 216, 187, 0.6);
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: rgba(224, 216, 187, 0.6);
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: rgba(224, 216, 187, 0.6);
+}
+
+.search-form input.search-field {
+    border-color: #5f7b5a;
+}
+
+.search-form input.search-submit {
+    filter: brightness(0) invert(0.8) sepia(1) saturate(0.5) hue-rotate(60deg);
+}
+
+/* =====================
+   Comentários / Posts
+   ===================== */
+
+.post-comments .post-comment .desc span.comment-reply a {
+    color: #e0d8bb;
+}
+
+.post-comments .post-comment .desc span.comment-reply {
+    color: #e0d8bb;
+}
+
+.post-comments .title .title_inner:first-letter {
+    color: #e0d8bb;
+}
+
+.content .post-comments .title .first-word {
+    color: #e0d8bb;
+}
+
+/* =====================
+   Pager / Navegação
+   ===================== */
+
+.pager .nav-links {
+    background: #525750;
+}
+
+/* =====================
+   Preloader
+   ===================== */
+
+.preloader {
+    background: #ab9c7f;
+}
+
+/* =====================
+   Bolhas de fundo (bg-bubbles)
+   ===================== */
+
+.bg-bubbles li {
+    background-color: rgba(224, 216, 187, 0.02) !important;
+}

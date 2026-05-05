@@ -7,13 +7,13 @@ const TypingAnimation = ({ data }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: data ? data : ["Gestão Ágil", "Engenheiro de Software", "Desenvolvedor Fullstack", "Soluções com IA", "DevOps"], // Strings to display
+      strings: data ? data : ["Gestão Ágil", "Engenharia de Software", "Desenvolvedor Fullstack", "Soluções com IA", "DevOps"], // Strings to display
       typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
+      backSpeed: 75,
+      backDelay: 500,
       smartBackspace: true,
       loop: true,
-      showCursor: false,
+      showCursor: true,
     });
 
     // Destropying

@@ -483,3 +483,178 @@ export const ResumeSectionClassic = () => {
     </div>
   );
 };
+
+export const ResumeSectionTony = () => {
+  return (
+    <div className="content resume">
+      {/* title */}
+      <div className="title">Currículo</div>
+      {/* content */}
+      <div className="row">
+        {/* experience */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="resume-title border-line-h">
+            <div className="icon">
+              <i className="fa fa-briefcase" />
+            </div>
+            <div className="name">Experiência</div>
+          </div>
+          <div className="resume-items">
+            <div className="resume-item border-line-h active">
+              <div className="date">2022 - 2025</div>
+              <div className="name">Coordenador de Tecnologia</div>
+              <div className="company">Hipocampus Edtech · Remoto</div>
+              <p>
+                Liderança técnica de equipes de desenvolvimento, definição de
+                arquitetura de soluções e alinhamento entre tecnologia e
+                objetivos pedagógicos da plataforma.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">2021 - 2022</div>
+              <div className="name">Desenvolvedor Full Stack</div>
+              <div className="company">Basis Tecnologia · Remoto</div>
+              <p>
+                Desenvolvimento de aplicações web com Laravel no back-end e
+                ReactJS no front-end, com foco em integrações e entrega de
+                features em ambiente ágil.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">2018 - 2022</div>
+              <div className="name">Consultor de Tecnologia Sênior</div>
+              <div className="company">Midnal · Híbrido</div>
+              <p>
+                Consultoria em projetos de transformação digital, levantamento
+                de requisitos, definição de soluções técnicas e suporte à
+                tomada de decisão estratégica em TI.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">2016 - 2018</div>
+              <div className="name">Desenvolvedor PHP</div>
+              <div className="company">N2OTI · Brasília</div>
+              <p>
+                Desenvolvimento e manutenção de sistemas web em PHP, atuando em
+                todo o ciclo de vida do software, do levantamento de requisitos
+                à entrega em produção.
+              </p>
+            </div>
+            <div className="resume-item">
+              <div className="date">2012 - 2016</div>
+              <div className="name">Analista</div>
+              <div className="company">Central IT - Governança Corporativa</div>
+              <p>
+                Análise de processos, suporte técnico e desenvolvimento de
+                soluções de governança corporativa para clientes dos setores
+                público e privado.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* education */}
+        <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          <div className="resume-title border-line-h">
+            <div className="icon">
+              <i className="fa fa-certificate" />
+            </div>
+            <div className="name">Aprimoramento</div>
+          </div>
+          <div className="resume-items">
+            <div className="resume-item border-line-h active">
+              <div className="date">Out. 2024</div>
+              <div className="name">Domine LLMs com LangChain</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Construção de aplicações com modelos de linguagem de grande
+                escala utilizando o framework LangChain.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Jun. 2024</div>
+              <div className="name">Machine Learning com Python</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Fundamentos e aplicações práticas de Machine Learning com
+                Python, incluindo algoritmos supervisionados e não supervisionados.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Set. 2022</div>
+              <div className="name">Azure DevOps - CI/CD</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Integração e entrega contínua com Azure DevOps, pipelines
+                automatizados, controle de versão e gestão de releases.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Abr. 2022</div>
+              <div className="name">Deep Learning com Python</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Redes neurais profundas com TensorFlow e Keras, aplicadas a
+                problemas reais de classificação e previsão.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Jan. 2021</div>
+              <div className="name">Livewire na Prática</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Desenvolvimento de interfaces dinâmicas com Livewire integrado
+                ao ecossistema Laravel.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Ago. 2019</div>
+              <div className="name">Laravel Backpack</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Criação de painéis administrativos completos com o pacote
+                Laravel Backpack para aplicações empresariais.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Jul. 2019</div>
+              <div className="name">Laravel em Produção - Deploy</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Boas práticas de deploy de aplicações Laravel em servidores de
+                produção, incluindo configuração de ambiente e CI/CD.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Nov. 2018</div>
+              <div className="name">Laravel com ACL</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Implementação de controle de acesso em aplicações Laravel, com
+                gerenciamento de papéis e permissões de usuários.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Nov. 2018</div>
+              <div className="name">Laravel 5.8 Completo</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Curso completo do framework Laravel, cobrindo desde fundamentos
+                até recursos avançados do ecossistema PHP.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
+              <div className="date">Mai. 2018</div>
+              <div className="name">Laravel com Vue JS</div>
+              <div className="company">Curso de Curta Duração</div>
+              <p>
+                Integração de Laravel com Vue.js para construção de SPAs e
+                interfaces reativas em projetos full stack.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="clear" />
+      </div>
+    </div>
+  );
+};

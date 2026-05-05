@@ -1,9 +1,6 @@
 import { Fragment } from "react";
 const bio_ = ` <p>
-<strong>Hello! I’m Donald Wellborn.</strong>
-Back-end &amp; Frond-end developer from UK, London. I have rich
-experience in wordpress, also I am good at Magento. I love to
-talk with you about our unique.
+<strong>Ola!.</strong>
 </p>`;
 const AboutMe = ({ bio }) => {
   return (
@@ -25,25 +22,25 @@ const AboutMe = ({ bio }) => {
             <div className="info-list">
               <ul>
                 <li>
-                  <strong>Idade . . . . .</strong> 41
+                  <strong>Idade</strong> 41
                 </li>
                 <li>
-                  <strong>Residência . . . . .</strong> Brasil
+                  <strong>Residência</strong> Brasil
                 </li>
                 <li>
-                  <strong>Freelance . . . . .</strong> Disponível
+                  <strong>Freelance</strong> Disponível
                 </li>
                 <li>
-                  <strong>Endereço . . . . .</strong> Goiás, Valparaíso
+                  <strong>Endereço</strong> Goiás, Valparaíso
                 </li>
                 <li>
-                  <strong>Formação . . . . .</strong> Análise e Desenvolvimento de Sistemas
+                  <strong>Formação</strong> Análise e Desenvolvimento de Sistemas
                 </li>                
                 <li>
-                  <strong>Certificações . . . . .</strong> ITIL OSA, ISO 27001, Scrum Foundation
+                  <strong>Certificações</strong> ITIL OSA, ISO 27001, Scrum Foundation
                 </li>
                 <li>
-                  <strong>Especialização . . . .</strong> Desenvolvimento de Aplicações de Inteligência Artificial Generativa 
+                  <strong>Especialização</strong> Desenvolvimento de Aplicações de Inteligência Artificial Generativa 
                 </li>
               </ul>
             </div>

@@ -1,15 +1,3 @@
-/**
-*	Ryan - Resume/CV/vCard Template (HTML)
-*	Version: 2.6
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © RyanCV by bslthemes. All Rights Reserved.
-**/
-
-/* TABLE OF CONTENTS
-	1. Template Dark
-*/
-
 /* 1. Template Dark */
 body {
 	color: rgba(255, 255, 255, 0.55);
@@ -347,9 +335,9 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .background.gradient {
-	background: #17171b !important;
-	background: -webkit-linear-gradient(top left, #17171b 0%, #28282f 100%) !important;
-	background: linear-gradient(to bottom right, #17171b 0%, #28282f 100%) !important;
+	background: #f7f7ff5b !important;
+	/* background: -webkit-linear-gradient(top left, #17171b 0%, #28282f 100%) !important;
+	background: linear-gradient(to bottom right, #17171b 0%, #28282f 100%) !important; */
 }
 
 .bg-bubbles li {
