@@ -30,12 +30,14 @@ const sections = [
           <strong>Orquestração de Fluxo —</strong> <T>n8n</T> atua como o
           "cérebro" da automação, conectando todos os nós e gerenciando a lógica
           de decisão.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Interface de Mensageria —</strong> <T>Evolution API</T> atua
           como a ponte de comunicação, permitindo recebimento de{" "}
           <T>webhooks</T> e envio de mensagens de texto e mídia via{" "}
           <T>WhatsApp</T>.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Modelos de Inteligência Artificial —</strong>{" "}
@@ -43,6 +45,7 @@ const sections = [
           raciocínio; <T>OpenAI GPT</T> para a tarefa de{" "}
           <em>Expert em Memória</em>; <T>Groq Whisper</T> para
           transcrição de áudio ultrarrápida (<T>Speech-to-Text</T>).
+          <hr className="separator" />
         </li>
         <li>
           <strong>Persistência e Memória —</strong> <T>Redis</T> para memória
@@ -62,11 +65,13 @@ const sections = [
           se a entrada é texto (<em>conversation</em>) ou áudio (
           <em>audioMessage</em>). Atuação identica para cada tipo de mensagem
           evitando degradação da comunicação entre usuário e agente.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Buffer de Mensagens —</strong> <T>Redis</T> agrupa entradas
           consecutivas e atua como buffer, garantindo que o
           agente responda ao contexto completo em vez de fragmentos.
+          <hr className="separator" />
         </li>
         <li>
           <strong>RAG e Memória de Longo Prazo —</strong> O agente dispõe de
@@ -74,12 +79,14 @@ const sections = [
           informações cruciais, aciona um sub-fluxo que consulta o{" "}
           <T>MySQL</T>, utiliza uma <T>LLM</T> para atualizar o resumo do
           cliente e salva a nova versão.
+          <hr className="separator" />
         </li>
         <li>
           <strong>MCP (Model Context Protocol) —</strong> Implementação de{" "}
           <T>MCP Client</T> e <T>MCP Server Trigger</T> para execução de
           ferramentas externas padronizadas, como geração de QR Codes e criação
           de documentos dinâmicos baseados em templates.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Sistema de Bloqueio (Anti-Loop) —</strong> Lógica de{" "}

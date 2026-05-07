@@ -68,7 +68,7 @@ a {
 .button:hover .arrow:before,
 .lnk:hover .arrow:after,
 .button:hover .arrow:after,
-.resume-items .resume-item.active .date:before,
+/* .resume-items .resume-item.active .date:before, */
 .skills-list ul li .progress .percentage,
 .single-post-text ul > li:before,
 .comment-text ul > li:before,
@@ -100,6 +100,12 @@ a {
 .preloader .spinner.box-rotation:after,
 .blog-content ul > li:before {
     background: #0a4f3b;
+}
+
+.resume-items .resume-item.active .date:before,
+.resume-items .resume-item.active .date {
+    background: #e0d8bb;
+    color: #0a4f3b;
 }
 
 .preloader .spinner .double-bounce1,
@@ -140,7 +146,7 @@ textarea:focus,
 /* .fuct-items .fuct-item .icon, */
 .resume-title .icon,
 .skill-title .icon,
-.resume-items .resume-item.active .date,
+/* .resume-items .resume-item.active .date, */
 /* .content.works .filter-menu .f_btn.active, */
 .box-item:hover .desc .name,
 .post-text-bottom span.cat-links a,
@@ -692,4 +698,11 @@ textarea:focus::-moz-placeholder {
 
 .bg-bubbles li {
     background-color: rgba(224, 216, 187, 0.02) !important;
+}
+
+.separator {
+    border: 0;
+    height: 1px !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ab9c7f, rgba(0, 0, 0, 0));
+    margin: 20px 0;
 }

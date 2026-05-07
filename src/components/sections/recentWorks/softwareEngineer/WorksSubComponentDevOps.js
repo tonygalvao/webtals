@@ -27,24 +27,26 @@ const sections = [
     content: (
       <ul style={{ paddingLeft: "1.2rem", lineHeight: "2" }}>
         <li>
-          <strong>Fase de Estabilização (WS01) —</strong> Implementação do
-          estágio <T>WS01</T> em máquina física com <T>Ubuntu</T> como
+          <strong>Fase de Estabilização (on-premise) —</strong> Implementação do
+          estágio <T>on-premise</T> em máquina física com <T>Linux</T> com distribuição <T>Ubuntu</T> como
           "heartbeat" do desenvolvimento. Sempre que um{" "}
-          <T>Pull Request</T> é aceito na branch <T>develop</T>, o ambiente{" "}
-          <em>current</em> reflete o código mais recente, reduzindo o atrito de
+          <T>Pull Request</T> é aceito em alguma <T>branch</T>, o ambiente{" "}
+          específico reflete o código mais recente, reduzindo o atrito de
           integração e permitindo validações rápidas.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Fase de Expansão (Controle de Ambientes) —</strong> Criação de
-          pipelines <T>develop</T>, <T>beta</T> e <T>vitrine</T>, estabelecendo ambientes de homologação
+          pipelines <T>develop</T>, <T>beta</T> e <T>homolog</T>, estabelecendo ambientes de homologação
           isolados para que diferentes stakeholders testem funcionalidades sem
           interferir na linha principal de produção.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Fase de Maturidade e Escala (GCP) —</strong> Transição para o{" "}
           <T>Google Cloud Platform</T> com <T>Compute Engine</T> e{" "}
-          <T>Cloud SQL</T>, marcando a entrada em produção com foco em
-          resiliência e persistência profissional de dados em infraestrutura
+          <T>Cloud SQL</T>, marcando a entrada em produção com foco em <T>alta disponibilidade</T>,
+          <T>resiliência</T> e <T>persistência profissional de dados</T> em infraestrutura
           gerenciada e elástica.
         </li>
       </ul>
@@ -57,19 +59,21 @@ const sections = [
         <li>
           <strong>CD Estratificado (Entrega Gerenciada) —</strong> Separação clara entre{" "}
           <T>Frontend</T> e <T>Backend</T> (ex:{" "}
-          <T>Hiplade-backend-vitrine</T> e <T>Hiplade-frontend-vitrine</T>),
+          <T>INSTANCIA-backend-x.x</T> e <T>INSTANCIA-frontend-x.x</T>),
           permitindo deploys independentes e correções rápidas por camada.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Triggers Baseados em Eventos —</strong> Uso de{" "}
           <T>Individual CI</T> para branches de <T>release</T> (ex:{" "}
           <em>release/x.x</em>), garantindo que cada commit seja validado
           automaticamente e mantendo a integridade do build.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Ambientes Híbridos —</strong> Desenvolvimento em
-          infraestrutura <T>On-premise</T> (WS01) e produção na{" "}
-          <T>Cloud</T> (GCP): escolha estratégica para otimização de recursos e
+          infraestrutura <T>On-premise</T> e produção na{" "}
+          <T>Google Cloud Platform</T> (GCP): escolha estratégica para otimização de recursos e
           latência de desenvolvimento.
         </li>
         {/* <li>
@@ -158,7 +162,7 @@ const WorksSubComponentDevOps = () => {
                 para os projetos Hiplade e SheAI revela uma jornada de
                 amadurecimento técnico: de um modelo de desenvolvimento local
                 para uma arquitetura de nuvem escalável. Como{" "}
-                <strong>Tech Lead</strong>, essa estrutura reflete a estratégia
+                <strong>Tech Lead</strong>, a estratégia foi
                 de equilibrar custos operacionais com alta disponibilidade.
               </p>
             </div>

@@ -31,12 +31,14 @@ const sections = [
           <T>Python</T>) pela alta performance em <T>REST APIs</T>, utilizando{" "}
           <T>Pydantic</T> para validação e <T>MongoDB</T> para o armazenamento
           <T>multi-tenant</T> de resultados.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Isolamento de Dependências —</strong> Desenhei um sistema de
           processamento via subprocessos em ambientes virtuais (<T>venvs</T>)
           isolados por módulo, permitindo que tecnologias como <T>TensorFlow</T>{" "}
           e <T>PyTorch</T> coexistam sem conflitos de dependências.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Scaffolding e Produtividade —</strong> Idealizei o{" "}
@@ -56,17 +58,18 @@ const sections = [
           <strong>FEX (Facial Expression) —</strong> Análise frame a frame de
           emoções em vídeos utilizando <T>OpenCV</T> e redes neurais (
           <T>CNN</T>).
+          <hr className="separator" />
         </li>
         <li>
           <strong>STT (Speech-to-Text) —</strong> Transcrição avançada com
           diarização (identificação de falantes) via <T>OpenAI Whisper</T> e{" "}
           <T>PyAnnote</T>, incluindo análise de sentimentos e nuvem de palavras.
+          <hr className="separator" />
         </li>
         <li>
           <strong>GenHI (Generative Human Intelligence) —</strong> Orquestração
-          de <T>LLMs</T> via <T>LangChain</T>, suportando desde modelos locais
-          via <T>Ollama</T> até APIs externas.
-          .
+          de <T>LLMs</T> via <T>LangChain</T>, suportando modelos locais
+          via <T>Ollama</T> e APIs externas (<T>OpenAI</T>, <T>Gemini</T> e etc).
         </li>
       </ul>
     ),
@@ -80,22 +83,25 @@ const sections = [
           técnico de codificação, orientando decisões de implementação e
           assegurando aderência aos padrões{" "}
           <T>Repository Pattern</T> e <T>Abstract Base Classes</T>.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Infraestrutura &amp; DevOps —</strong> Defini o ambiente de
           execução em <T>Docker</T> com suporte a GPU <T>NVIDIA</T> e projetei
           o fluxo de <T>CI/CD</T> no <T>Azure Pipelines</T>.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Integração por Callback —</strong> Estabeleci um padrão de
           comunicação assíncrona onde a SheAI processa os dados e devolve os
-          resultados via <T>callback POST</T> para o ecossistema Hiplade,
-          garantindo escalabilidade.
+          resultados via <T>callback POST</T> para o ecossistema que originou
+          a requisição.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Scrum e Estratégia —</strong> Atuei na priorização do{" "}
           <T>backlog</T> e na definição do <T>roadmap</T> tecnológico, alinhando
-          a evolução da IA com as necessidades de negócio da HealthTech.
+          a evolução da IA com as necessidades de negócio.
         </li>
       </ul>
     ),

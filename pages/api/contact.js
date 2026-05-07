@@ -1,10 +1,17 @@
 import { Resend } from "resend";
+import { headers } from 'next/headers';
 
 const SECRETS_API_URL =
   "https://webtals-site-webtals-secret-manager.xzeyg1.easypanel.host/api/secrets";
 
 async function fetchSecrets() {
-  const response = await fetch(SECRETS_API_URL);
+  const headersList = await headers();
+  const origin = headersList.get('host');
+  const response = await fetch(SECRETS_API_URL, {
+    headers: {
+      'Origin': origin
+    }
+  });
   if (!response.ok) {
     throw new Error(`Failed to fetch secrets: ${response.status}`);
   }

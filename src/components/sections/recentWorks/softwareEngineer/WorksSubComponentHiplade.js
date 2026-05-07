@@ -42,25 +42,27 @@ const sections = [
       <ul style={{ paddingLeft: "1.2rem", lineHeight: "2" }}>
         <li>
           <strong>Arquitetura e Padronização —</strong> Determinei os padrões
-          de codificação e a arquitetura de software para sustentar o
+          de codificação (<T>Design Patterns</T>) e a arquitetura de software para sustentar o
           crescimento do produto. Responsável direto pelo desenvolvimento das
           features de maior complexidade técnica, garantindo a integridade do
           sistema.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Gestão Ágil e Processos —</strong> Implementei e coordenei o
           framework <T>Scrum</T>, facilitando rituais, removendo impedimentos e
-          garantindo a cadência das entregas. Responsável pela elaboração das{" "}
+          garantindo a aderência cronológica das entregas. Responsável pela elaboração das{" "}
           <T>Release Notes</T> de cada versão, assegurando comunicação clara
           das funcionalidades para os stakeholders.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Desenvolvimento de Talentos —</strong> Estabeleci uma cultura
           de excelência através de revisões de código (<T>Code Review</T>)
-          rigorosas e ciclos de feedback <T>1:1</T>, focando no crescimento
+          rigorosas e ciclos de <T>feedback 1:1</T>, focando no crescimento
           técnico e profissional dos membros do time.
         </li>
-      </ul>
+      </ul>      
     ),
   },
   {
@@ -72,16 +74,19 @@ const sections = [
           <T>Laravel</T> (<T>PHP</T>) no backend e <T>ReactJS</T> com{" "}
           <T>Material UI</T> no frontend, com <T>REST APIs</T> e autenticação
           via <T>JWT</T>.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Migração de Cloud —</strong> Transição do ambiente <T>AWS</T>{" "}
           para o <T>Google Cloud Platform</T> (<T>GCP</T>), otimizando
           integração com serviços de dados e escalabilidade.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Engenharia de Streaming —</strong> Implementação de sistema
           proprietário de <T>Streaming</T> e <T>Cloud Recording</T>, essencial
           para sessões de debriefing em tempo real.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Cultura DevOps —</strong> Estruturação de pipelines de{" "}
@@ -98,8 +103,9 @@ const sections = [
       <ul style={{ paddingLeft: "1.2rem", lineHeight: "2" }}>
         <li>
           <strong>Maturidade TRL 7 —</strong> Elevamos a plataforma ao nível de
-          prontidão tecnológica 7 (protótipo demonstrado em ambiente
+          prontidão tecnológica 7 (<T>TRL 7</T>) (protótipo demonstrado em ambiente
           operacional).
+          <hr className="separator" />
         </li>
         <li>
           <strong>Ecossistema Digital —</strong> Lançamento do site{" "}
@@ -119,12 +125,14 @@ const sections = [
             vitrine.hiplade.com.br
           </a>
           .
+          <hr className="separator" />
         </li>
         <li>
           <strong>Spin-off SheAI —</strong> As funcionalidades de{" "}
           <T>Inteligência Artificial</T> para identificação facial, linguagem
           corporal e transcrição de áudio evoluíram para o produto{" "}
-          <strong>SheAI</strong>, do qual também sou o responsável técnico.
+          <strong>SheAI</strong>, do qual me tornei o idealizador e responsável técnico.
+          <hr className="separator" />
         </li>
         <li>
           <strong>Módulos Entregues —</strong> Agendamento de simulações,
@@ -244,7 +252,7 @@ const WorksSubComponentHiplade = () => {
                 >
                   {heading}
                 </h5>
-                <div>{content}</div>
+                <div>{content}</div>                
               </div>
             </div>
             <div className="clear" />

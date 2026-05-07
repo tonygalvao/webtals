@@ -501,6 +501,17 @@ export const ResumeSectionTony = () => {
           </div>
           <div className="resume-items">
             <div className="resume-item border-line-h active">
+              <div className="date">2024</div>
+              <div className="name">Desenvolvedor de Soluções IA</div>
+              <div className="company">Cast · Remoto</div>
+              <p>
+                Desenvolvimento de soluções de inteligência artificial, 
+                incluindo integração de modelos de linguagem, automação de processos e
+                implementação de agentes inteligentes. Integração de ferramentas IA com 
+                sistemas existentes.
+              </p>
+            </div>
+            <div className="resume-item border-line-h">
               <div className="date">2022 - 2025</div>
               <div className="name">Coordenador de Tecnologia</div>
               <div className="company">Hipocampus Edtech · Remoto</div>
@@ -561,7 +572,7 @@ export const ResumeSectionTony = () => {
             <div className="name">Aprimoramento</div>
           </div>
           <div className="resume-items">
-            <div className="resume-item border-line-h active">
+            <div className="resume-item border-line-h">
               <div className="date">Out. 2024</div>
               <div className="name">Domine LLMs com LangChain</div>
               <div className="company">Curso de Curta Duração</div>
