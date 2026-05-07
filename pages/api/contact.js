@@ -3,10 +3,11 @@ import { Resend } from "resend";
 const SECRETS_API_URL =
   "https://webtals-site-webtals-secret-manager.xzeyg1.easypanel.host/api/secrets";
 
-async function fetchSecrets(domain) {
+async function fetchSecrets(secretData) {
   const response = await fetch(SECRETS_API_URL, {
     headers: {
-      'Origin': domain,
+      'Origin': secretData.domain,
+      'ip': secretData.ip,
     }
   });
 
@@ -36,11 +37,22 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "E-mail inválido." });
   }
 
-  const domain = JSON.stringify(req.headers.host) || 'sem.req';
+  const forwarded = req.headers["x-forwarded-for"];
+    // 'x-forwarded-for' can be a comma-separated list; the first one is the client
+  const ip = typeof forwarded === 'string' 
+    ? forwarded.split(',')[0] 
+    : req.socket.remoteAddress;
+
+  const secretData = {
+    domain: JSON.stringify(req.headers.host) || 'sem.req',
+    ip: JSON.stringify(ip),
+  };
+  
+  console.log("Request context:", secretData);  
 
   let resendKey, resendTo;
   try {
-    ({ resendKey, resendTo } = await fetchSecrets(domain));
+    ({ resendKey, resendTo } = await fetchSecrets(secretData));
   } catch (error) {
     console.error("Secrets fetch error:", error);
     return res.status(500).json({ error: "Erro ao obter configurações. Tente novamente." });
