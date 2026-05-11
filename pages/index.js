@@ -29,7 +29,7 @@ const RecentWorks = dynamic(
   }
 );
 const bio = `<p>
-Olá, sinta-se a vontade para explorar o meu portfólio e 
+Olá, sinta-se à vontade para explorar o meu portfólio e 
 conhecer um pouco mais sobre minha jornada profissional 
 e o trabalho que desenvolvi ao longo dos anos. Em caso de 
 dúvidas ou interesse para algum projeto, acesse a página de contato. 

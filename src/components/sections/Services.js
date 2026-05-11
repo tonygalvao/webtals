@@ -4,7 +4,7 @@ const data = [
   {
     icon: "fa fa-rocket",
     title: "Gestão Ágil",
-    desc: "Experiencia com metodologias ágeis e ferramentas de registro e controle de tarefas.",
+    desc: "Experiência com metodologias ágeis e ferramentas de registro e controle de tarefas.",
   },
   {
     icon: "fa fa-cogs",
